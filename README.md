@@ -59,10 +59,12 @@ Aquí se estudian esas señales mediante dos definiciones de clasificación. El 
 
 Estos resultados proceden de las **salidas persistidas del notebook**. No se han reproducido en un entorno limpio.
 
-| Experimento | Etiqueta positiva: regla heurística | Accuracy de prueba | ROC AUC | F1 de clase positiva | Observaciones de prueba |
-|---|---|---:|---:|---:|---:|
-| 1 | `classification_score > 4` | 93,83% | 0,9835 | 0,90 | 3.660 |
-| 2 | `Hausdorff_Distance > 9` | 88,06% | 0,9494 | 0,88 | 3.660 |
+Ambos experimentos usan **3.660 observaciones de prueba**.
+
+| Experimento | Etiqueta positiva: regla heurística | Accuracy de prueba | ROC AUC | F1 de clase positiva |
+|---|---|---:|---:|---:|
+| 1 | `classification_score > 4` | 93,83% | 0,9835 | 0,90 |
+| 2 | `Hausdorff_Distance > 9` | 88,06% | 0,9494 | 0,88 |
 
 **Cómo interpretar la tabla:** se predicen dos reglas diferentes sobre los datos, no etiquetas independientes de “nuevo” y “existente”. Las métricas no prueban desempeño real en campo ni permiten concluir, por sí solas, que un experimento sea mejor detector que el otro.
 
